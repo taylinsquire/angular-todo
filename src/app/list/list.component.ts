@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+  checked: Boolean = false;
+  list: Array<String> = ['Walk the dog', 'Feed the dog', 'Go to work', 'Something else'];
 
   constructor() { }
 

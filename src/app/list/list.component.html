@@ -1,1 +1,9 @@
-<p>list works!</p>
+<section class="example-section">
+  <mat-checkbox class="example-margin" [(ngModel)]="checked"
+    >Checked</mat-checkbox
+  >
+</section>
+
+<ul *ngIf="checked">
+  <li *ngFor="let item of list">{{ item }}</li>
+</ul>
